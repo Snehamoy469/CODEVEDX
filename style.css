@@ -1,0 +1,271 @@
+/* ==========================
+   Global Styling
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==========================
+   Hero Section
+========================== */
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0077ff, #00c6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid white;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    background: white;
+    color: #0077ff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero-buttons a:hover {
+    transform: translateY(-4px);
+}
+
+/* ==========================
+   Sections
+========================== */
+
+section {
+    padding: 70px 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 35px;
+    color: #222;
+}
+
+/* ==========================
+   Card Design
+========================== */
+
+.card {
+    background: white;
+    width: 85%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ==========================
+   Button Design
+========================== */
+
+.btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 12px 20px;
+    background: #0077ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #005fd1;
+}
+
+
+/* ==========================
+   Skills Section
+========================== */
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-box span {
+    background: #0077ff;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+/* ==========================
+   Resume Section
+========================== */
+
+.resume {
+    text-align: center;
+}
+
+.resume-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.resume-buttons a {
+    text-decoration: none;
+    background: #0077ff;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.resume-buttons a:hover {
+    background: #005fd1;
+}
+
+/* ==========================
+   Contact Section
+========================== */
+
+.contact {
+    text-align: center;
+    background: white;
+}
+
+.contact p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contact a {
+    color: #0077ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+/* ==========================
+   Responsive Design
+========================== */
+
+@media(max-width:768px) {
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h3 {
+        font-size: 18px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .profile-img {
+        width: 170px;
+        height: 170px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 95%;
+    }
+}
